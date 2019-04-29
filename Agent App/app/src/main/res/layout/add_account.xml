@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/table1"
+    android:layout_marginTop="50dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/image1"
+        android:src="@drawable/addaccount"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="Aspirant Labs"/>
+
+</TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table2"
+        android:layout_below="@+id/table1"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/image2"
+            android:src="@drawable/addaccount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="Minister White"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table3"
+        android:layout_below="@+id/table2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/image3"
+            android:src="@drawable/ic_plus"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="Add account"/>
+
+    </TableRow>
+
+</RelativeLayout>

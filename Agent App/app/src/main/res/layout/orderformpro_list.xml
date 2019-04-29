@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle_background"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pimage"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wsp"
+                android:layout_marginLeft="2dp"
+                android:text="Wsp  :"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/pimage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pwsp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/wsp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mrp"
+                android:layout_marginLeft="2dp"
+                android:text="Mrp  :"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/wsp"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/pimage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pmrp"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/pwsp"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/wsp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/catge"
+                android:layout_marginLeft="2dp"
+                android:text="categorie  :"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@+id/mrp"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/pimage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pcatge"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@+id/pmrp"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:layout_toRightOf="@+id/catge"/>
+            <TextView
+                android:id="@+id/plname"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Tajmahal"
+                android:layout_marginLeft="5sp"
+                android:textSize="12dp"
+                android:layout_marginTop="10sp"
+                android:layout_below="@+id/pimage"
+                android:textColor="@color/colorBlack"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/pimage"
+                android:layout_toLeftOf="@+id/proselcimage"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/multidot"
+                android:id="@+id/multicolor"/>
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_below="@+id/pimage"
+               android:src="@drawable/hanger"
+               android:layout_alignParentRight="true"
+               android:id="@+id/proselcimage"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5pt"
+                android:layout_below="@+id/plcheckbox"
+                android:background="@color/colorlightshade" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

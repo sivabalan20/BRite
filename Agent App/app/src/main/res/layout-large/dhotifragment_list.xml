@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/trousertable"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/plname"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=" "
+                android:textColor="#000000"
+                android:textSize="14dp" />
+            <ImageView
+                android:id="@+id/pvariant"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/multidot"
+                android:visibility="invisible"/>
+            <EditText
+                android:id="@+id/size36"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+            <EditText
+                android:id="@+id/size38"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+            <EditText
+                android:id="@+id/size40"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+            <EditText
+                android:id="@+id/size42"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+
+            <EditText
+                android:id="@+id/size44"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+            <EditText
+                android:id="@+id/size46"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="2"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+            <EditText
+                android:id="@+id/qty"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                android:maxLength="3"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit1_text_style"/>
+            <TextView
+                android:id="@+id/tqty"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/sizetype"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/fit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/sleeve"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/shade"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/leng"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/plcatg"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:text=" "
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/prodelete"
+                android:src="@drawable/delete"/>
+        </TableRow>
+
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1pt"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewline"
+        android:layout_below="@+id/trousertable"
+        android:background="@color/colorAccent" />
+
+</LinearLayout>

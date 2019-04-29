@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/close"
+        android:src="@drawable/cancel"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close"
+        android:id="@+id/table1"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:text="Brand :" />
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/brandfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined" />
+ </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/table1"
+        android:id="@+id/table2"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:text="Category :" />
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/categoryfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined" />
+    </TableRow>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:id="@+id/filterclose">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img"
+            android:src="@drawable/filter1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:text="Apply"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

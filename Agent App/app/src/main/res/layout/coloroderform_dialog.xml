@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/table"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/hscheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/hhand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H/S"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"
+                android:visibility="invisible"/>
+            <CheckBox
+                android:id="@+id/fscheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/fhand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F/S"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"
+                android:visibility="invisible"/>
+        </TableRow>
+    </TableLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/colorlistView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/submit"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="60dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorclose"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner_shape_button"
+        android:text="Submit"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

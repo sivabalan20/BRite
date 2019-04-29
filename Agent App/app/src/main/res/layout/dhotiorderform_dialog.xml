@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/mainviews">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/views"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/view"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/filter"
+            android:layout_toLeftOf="@+id/views"
+            android:src="@drawable/filter" />
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/filter"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:background="@color/colorWhite"
+            android:hint="Search product.."
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textVisiblePassword" />
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/shirtrow"
+        android:layout_below="@+id/mainviews"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/tops"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/top_bottom_button"
+                android:text="Tops" />
+            <Button
+                android:id="@+id/bottoms"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/top_bottom_button"
+                android:text="Bottoms" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/prolistView"
+        android:layout_below="@+id/shirtrow"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/submit"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submit"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:text="Back"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

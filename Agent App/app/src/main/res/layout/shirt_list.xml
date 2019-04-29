@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/selecteditem">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0EAEC"
+            android:id="@+id/table1">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4">
+                <TextView
+                    android:id="@+id/simpleTextView2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="Order #:"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/onumber"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12dp"  />
+
+                <TextView
+                    android:id="@+id/simpleTextView1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="Date :"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/odate"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12dp"  />
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table1"
+            android:id="@+id/table2">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/customer"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="Customer :"
+                    android:textColor="#000000"
+                    android:textSize="12dp"  />
+
+                <TextView
+                    android:id="@+id/cname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12dp"  />
+                <TextView
+                    android:id="@+id/orderid"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:visibility="gone"/>
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table2"
+            android:id="@+id/table3">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4">
+                <TextView
+                    android:id="@+id/agent"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="Agent :"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/aname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:id="@+id/prodelete"
+                    android:src="@drawable/delete"
+                    android:visibility="invisible"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table3"
+            android:background="#E9DEE2"
+            android:id="@+id/table4">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/s1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="Total Pcs #:"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/tpics"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="12dp"  />
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusimage"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="2dp"
+                        android:id="@+id/image" />
+                    <TextView
+                        android:id="@+id/mainstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image"
+                        android:padding="6dp"
+                        android:text="Status :"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/mainstatus"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"  />
+                </RelativeLayout>
+
+
+
+
+
+
+            </TableRow>
+        </TableLayout>
+
+     </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

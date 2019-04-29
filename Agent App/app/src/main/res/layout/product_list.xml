@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectcardview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_background"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorshade">
+
+                <TextView
+                    android:id="@+id/simpleTextView1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="ProductName"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/simpleTextView2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="ProductCategory"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/simpleTextView3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="ProductID"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorlightshade">
+
+                <TextView
+                    android:id="@+id/pname"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/pcatge"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/pid"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/simple"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="WSP"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/pwsp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/simple3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="MRP"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/pmrp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+
+            </TableRow>
+        </TableLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

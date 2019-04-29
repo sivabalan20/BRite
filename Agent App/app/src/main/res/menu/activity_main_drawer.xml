@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_shirt"
+            android:icon="@drawable/ic_shirt"
+            android:title="@string/menu_home" />
+    </group>
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dhoti"
+            android:icon="@drawable/ic_square_shape_shadow"
+            android:title="@string/menu_gallery" />
+    </group>
+    <!--<group android:id="@+id/group6" android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_orderform"-->
+            <!--android:icon="@drawable/ic_orderform"-->
+            <!--android:title="@string/menu_of" />-->
+    <!--</group>-->
+
+    <group android:id="@+id/group3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/ic_person"
+            android:title="@string/menu_slideshow" />
+    </group>
+    <group android:id="@+id/group4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_product"
+            android:title="@string/menu_product" />
+    </group>
+    <group android:id="@+id/group5" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_tools" />
+    </group>
+
+
+
+</menu>

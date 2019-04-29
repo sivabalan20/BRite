@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/toptable"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                android:text="Cu Name :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cusname"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text=""/>
+            <ImageView
+                android:id="@+id/selectproductimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/selectproduct"/>
+        </TableRow>
+    </TableLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5pt"-->
+        <!--android:id="@+id/viewline"-->
+        <!--android:layout_below="@+id/toptable"-->
+        <!--android:background="@color/colorlightshade" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toptable"
+        android:id="@+id/maintable"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/trousertable"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Product"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/varient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Variant"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="28"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="30"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="32"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="34"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="36"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="38"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="40"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="42"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="44"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/size46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="46"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/size48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="48"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Qty"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/tqty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="TQty"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Size Type"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/fit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Fit"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/sleeve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Sleeve"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/shade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Shade"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/leng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Length"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Category"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/seleprolist"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/maintable"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/table3"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table3"
+        android:layout_above="@+id/table2"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/te"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Select Product :"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
+            <AutoCompleteTextView
+                android:id="@+id/proauto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/table1"
+        android:id="@+id/table2"
+        android:background="#ECE2E2"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/totalpiece1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Total Pcs #:"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/pertotpieces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/totalitem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Total Items #:"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/pertotitems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/table1"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/back"
+                android:background="@color/colorgray">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img"
+                    android:src="@drawable/back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/img"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:text="Back"
+                    android:textColor="@color/colorWhite"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/saveproduct"
+                android:background="@color/colorAccent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/save"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/img1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:text="Save"
+                    android:textColor="@color/colorWhite"/>
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
